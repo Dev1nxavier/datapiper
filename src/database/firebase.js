@@ -1,8 +1,7 @@
 
 import React, { createContext, useEffect } from 'react'
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getDatabase, set, update, push, ref, orderByChild, onValue, query, equalTo, orderByKey, } from "firebase/database";
+import { getDatabase, set, push, ref, orderByChild, onValue, query, equalTo, orderByKey, } from "firebase/database";
 import { useDispatch } from 'react-redux';
 import { setData, updateClients } from '../features/stateSlice';
 import data from '../data/data.json';
@@ -32,7 +31,7 @@ const FirebaseProvider = ({ children }) => {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+
     const database = getDatabase(app);
 
     let myFirebase = {
@@ -52,7 +51,7 @@ const FirebaseProvider = ({ children }) => {
     }
 
     function getAllData() {
-        let _records = [];
+
         const myRef = ref(database,'Databse/');
         onValue(myRef, snapshot => {
             console.log("Retrieved:", snapshot.val())
