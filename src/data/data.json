@@ -1,0 +1,79 @@
+{
+  "Databse":{
+    "skills": [
+      "Javascript",
+      "Springboot",
+      "Docker",
+      "Kubernetes",
+      "API",
+      "microservices_cloud",
+      "AWS-Amazon-Web-Services",
+      "NoSQL",
+      "MySQL",
+      "PostgreSQL",
+      "SQL",
+      "Zendesk",
+      "Datavault",
+      "Fullstack-Engineer"
+    ],
+    "clients":[
+      {
+        "name":"PWC",
+        "roles": [
+          {
+            "role": "Core Senior Software Developer",
+              "POC": "M.RD43@datapiper.com",
+              "urgency": 1,
+              "Qty": 1,
+              "skills": {
+                "Javascript": true,
+                "Springboot": true,
+                "Docker": true,
+                "Kubernetes": true
+              }
+          },
+          {
+              "role":"Core Senior Software Developer",
+              "POC": "M.RD43@datapiper.com",
+              "urgency": 1,
+              "Qty": 1,
+              "skills": {
+                "Javascript": true,
+                "Springboot": true,
+                "Docker": true,
+                "Kubernetes": true
+              }
+          },
+          {
+              "role":"Zendesk Developer",
+              "POC": "DavidS_33@datapiper.com",
+              "urgency": 2,
+              "Qty": 1,
+              "skills": {
+                "Zendesk": true
+              }
+          },
+          {
+              "role": "Datavault 2,0",
+              "POC": "DavidS_33@datapiper.com",
+              "urgency": 1,
+              "Qty": 3,
+              "skills": {
+                "Datavault": true
+              }
+
+          },
+          {
+              "role":"Snowflake data engineer",
+              "POC": "ElizaT_Cat@datapiper.com",
+              "urgency": 3,
+              "Qty": 1,
+              "skills": {
+                "Javascript": true
+              }
+          }
+        ]
+      }
+    ]
+  }
+}
