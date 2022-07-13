@@ -65,7 +65,7 @@ export default function MyAppBar(props) {
 
     const [company, setCompany] = useState("");
 
-    const { categories, ...others } = props;
+    // const { categories, ...others } = props;
 
     const [open, setOpen] = React.useState(false);
 

@@ -1,8 +1,7 @@
 import Button from "@mui/material/Button";
-import theme from "../system/AppTheme";
 import { styled } from '@mui/material/styles'
 
-export default function ButtonRounded({title, styles, onClick, others}){
+export default function ButtonRounded({title, styles, onClick}){
 
     const StyledButton = styled(Button)(({ theme }) => ({
         backgroundColor:"#0474e4",

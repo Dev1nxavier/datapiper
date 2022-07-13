@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, Box, Typography, IconButton, Link } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
 
-export default function Footer({ }) {
+export default function Footer() {
 
     return (
         <Box sx={{ backgroundColor:'#253028', padding:5, display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center' }}>
