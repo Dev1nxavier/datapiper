@@ -8,7 +8,7 @@ import store from './store';
 import { Provider } from 'react-redux'
 import appTheme from './system/AppTheme';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider, theme } from '@mui/material/styles'
+import { ThemeProvider } from '@mui/material/styles'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

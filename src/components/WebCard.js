@@ -6,7 +6,6 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import headerImage from '../public/design_image.jpeg';
 import { Button } from '@mui/material';
 import urgentImg from '../public/pomeranian.jpeg';
 import soonImg from '../public/computer_typing.jpeg';

@@ -1,13 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Select, MenuItem, OutlinedInput, Checkbox, ListItemText, FormControl, InputLabel } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux'
 import { saveQuery } from '../features/stateSlice';
-import { FirebaseContext } from '../database/firebase';
 import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import ViewListIcon from '@mui/icons-material/ViewList'
-import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
-import { ToggleOn, ToggleOff } from '@mui/icons-material'
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -20,22 +17,11 @@ const MenuProps = {
     },
 };
 
-const Clients = [
-    "PWC",
-    "GOOGLE",
-    "HBO",
-    "ATOS",
-    "NEXT",
-    "CDA",
-    "HCL",
-]
-
 export default function CustomSearchBar({handleToggle, showTable}) {
 
     const state = useSelector(state => state.stateSlice);
     const clients = state.clients;
     const allSkills = state.skills;
-    const myQuery = state.query;
 
     const dispatch = useDispatch();
 
@@ -72,7 +58,7 @@ export default function CustomSearchBar({handleToggle, showTable}) {
         setFlatArray(tempArray);
         dispatch(saveQuery(tempArray))
 
-    }, [allSkills, clients])
+    }, [allSkills, clients, dispatch])
 
     const handleChange = (e) => {
         const { target: { value } } = e;

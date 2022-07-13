@@ -1,6 +1,5 @@
-import { Container, Box } from '@mui/system';
+import { Container } from '@mui/system';
 import React, { useState } from 'react';
-import ClientCards from '../components/Cards';
 import CustomSearchBar from '../components/SearchBar';
 import SearchTable from '../components/SearchTable';
 
