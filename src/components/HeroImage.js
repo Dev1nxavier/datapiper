@@ -9,10 +9,11 @@ import { Link } from 'react-router-dom';
 const HeroImage = ({ handleSearch, searchMode }) => {
 
     return (
-        <Box className='hero-image'>
+        <Box className='hero-container'>
+            <Box className='hero-image' />
             <Container className='hero-text'>
                 <Typography variant='h2'>We Rise Above</Typography>
-                <Link to={'/search'} style={{textDecoration:'none'}}> 
+                <Link to={'/search'} style={{ textDecoration: 'none' }}>
                     <ButtonRoundedSecondary title={!searchMode ? "Explore Jobs" : "Featured Jobs"} styles={{ mt: 3 }} onClick={handleSearch} />
                 </Link>
             </Container>

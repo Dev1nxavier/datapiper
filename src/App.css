@@ -37,6 +37,12 @@
 
 }
 
+.hero-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .hero-image {
   background-image: url("./public/clouds_sky.jpeg");
   height: 50vh;
@@ -44,6 +50,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding:40px;
+  transition: transform 2s;
+}
+
+.hero-image:hover {
+  transform: scale(1.15);
 }
 
 .hero-text {
